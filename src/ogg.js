@@ -11,7 +11,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url))
 
 class OggConverter {
     constructor() {
-        ffmpeg.setFfmpegPath('./node_modules/ffmpeg')
+        ffmpeg.setFfmpegPath(installer.path)
     }
 
     toMp3(input, output) {
